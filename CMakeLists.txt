@@ -7,6 +7,7 @@ string(REPLACE " " "_" ProjectId ${ProjectId})
 project(${ProjectId} C)
 
 set(CMAKE_C_STANDARD 11)
+#set(DCMAKE_C_FLAGS "/utf-8")
 
 #拿到目录下所有.c的文件，存到files里
 file(GLOB files "${CMAKE_CURRENT_SOURCE_DIR}/*.c")
